@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Movie Ticket Booking</h1>
+    
+    <h2>Now Showing:</h2>
+    <div class="row">
+        <div class="column">
+            <h3>Mission Impossible: Dead Reckoning - Part One</h3>
+            
+            <img height="300px" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/mission-impossible-dead-reckoning--part-one-et00329481-1688284554.jpg" alt="Mission Impossible">
+            <details>
+                <summary>Read More..</summary>
+                <p>In Mission: Impossible - Dead Reckoning Part One, Ethan Hunt (Tom Cruise) and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the fate of the world at stake, and dark forces from Ethan`s past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than his mission - not even the lives of those he cares about most.</p>
+            </details>
+            
+        </div>
+        <div class="column">
+            <h3>Oppenheimer</h3>
+            <img height="300px" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/oppenheimer-et00347867-1683533414.jpg" alt="">
+            <details>
+                <summary>Read More..</summary>
+                <p>The film is based on the Pulitzer Prize-winning book American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer by Kai Bird and the late Martin J. Sherwin.</p>
+            </details>
+        </div>
+        <div class="column">
+            <h3>Insidious: The Red Door</h3>
+            <img height="300px" src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/insidious-the-red-door-et00357727-1688540822.jpg" alt="">
+            <details>
+                <summary>Read More..</summary>
+                <p>The Red Door, the horror franchise`s original cast, returns for the final chapter of the Lambert family`s terrifying saga. <br>
+                    To put their demons to rest once and for all, Josh (Patrick Wilson) and a college-aged Dalton (Ty Simpkins) must go deeper into The Further, facing their family`s dark past and a host of new and more horrifying terrors that lurk behind the red door.</p>
+            </details>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    
+    <h2 style="text-align: center;">Your Booking</h2>
+
+    <div class="ticket">
+        <form>
+            <div class="inputs">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="movie">Movie:</label>
+                <select id="movie" name="movie">
+                    <option value="m1">Mission Impossible: Dead Reckoning - Part One</option>
+                    <option value="m2">Oppenheimer</option>
+                    <option value="m3">Insidious: The Red Door</option>
+                </select>
+                
+                <br><br>
+            </div>
+                <label for="date">Date:</label>
+                <input type="date" min="2023-07-17" max="2023-07-31" name="date" required>
+            <br><br>
+            <div class="times">
+                <label for="time">Time:</label>
+                <input type="radio" name="time" value="10">
+                <label for="10">10:00 am</label>
+                <input type="radio" name="time" value="13">
+                <label for="13">01:00 pm</label>
+                <input type="radio" name="time" value="16">
+                <label for="16">04:00 pm</label>
+                <input type="radio" name="time" value="19">
+                <label for="19">07:00 pm</label>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="inputs">
+                <label for="seats">Number of Seats:</label>
+                <input type="number" name="seats" required><br><br>
+            </div>
+            <button type="submit">Book</button>
+        </form>
+    </div>
+</body>
+</html>

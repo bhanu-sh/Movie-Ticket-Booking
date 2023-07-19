@@ -1,0 +1,80 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/retro-dark-field-purple-neon-4k-auix56wtp8uauv8d.jpg);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    color: aliceblue;
+}
+
+
+.row {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0% 5%;
+    
+    
+}
+.column{
+
+    border-radius: 25px;
+    text-align: center;
+    margin: 0% 10%;
+    backdrop-filter: blur(6px);
+    color: rgb(255, 185, 226);
+    text-shadow: 0px 0px 20px;
+    
+}
+.column:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.515);
+    font-size: large;
+    backdrop-filter: blur(6px);
+    
+}
+
+hr{
+    border: solid 2px rgba(0, 0, 0, 0.321);
+    margin: 0px -10px 0px -10px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline red;
+    text-shadow: 0px 0px 20px;
+}
+h2{
+    color: rgb(255, 185, 226);
+    text-decoration: underline red;
+    text-shadow: 0px 0px 20px;
+}
+
+.ticket{
+    display: absolute;
+   
+    text-shadow: 0px 0px 20px;
+}
+form{
+    margin: 0% 30%;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0px 0px 20px white;
+}
+select{
+    width: 100%;
+    padding: 5px;
+}
+
+input.times{
+    position: absolute;
+    padding: 0px;
+    box-shadow: 0px 0px 20px rgb(255, 0, 221);
+
+}
+button{
+    margin-left: 45%;
+    box-shadow: 0px 0px 20px rgb(255, 0, 221);
+    
+}
